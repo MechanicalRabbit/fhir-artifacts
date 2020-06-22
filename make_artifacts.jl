@@ -29,7 +29,7 @@ filename = joinpath(@__DIR__, "fhir-r4-2019-10-30.tgz")
 datapath = artifact_path(fhir_hash)
 if !isfile(filename)
    println("making $(filename)")
-   run(`/bin/tar --directory=$(datapath) --file=$(filename) --create --gzip .`)
+   run(`/bin/tar --directory=$(datapath) --file=$(filename) --create --gzip fhir-r4`)
 end
 
 println("sha256: ", bytes2hex(open(sha256, filename)))

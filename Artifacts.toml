@@ -2,6 +2,5 @@
 git-tree-sha1 = "18c1d0d17ba736aea479fd101b749eb4a8a06e75"
 
   [[fhir-r4.download]]
-    url = "https://github.com/rbt-lang/fhir-artifacts/fhir-r4-2019-10-30.tgz"
-    sha256 = "3ab1ec20052660bc5a9e5dc5a831c6264cf49839786880b3144c148b33e4a408"
-
+    url = "https://github.com/rbt-lang/fhir-artifacts/raw/master/fhir-r4-2019-10-30.tgz"
+    sha256 = "11915d45884c30805a2c4eb30e63368cf1284b11547a6430920e4a173b2fadb8"
