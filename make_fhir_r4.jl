@@ -13,9 +13,13 @@ if fhir_hash == nothing || !artifact_exists(fhir_hash)
         zip = ZipFile.Reader(fname);
         for f in zip.files
             parts = split(f.name, "\\")
-            is_profile = endswith(parts[end], ".profile.json")
-            is_example = endswith(parts[end], "-example.json")
-            if is_example || is_profile
+            if "v3" in parts || "v2" in parts || "ehrsrle" in parts
+                continue
+            end
+            is_canonical = endswith(parts[end], ".canonical.json")
+            is_example = contains(parts[end], "-example") &&
+                         endswith(parts[end], ".json")
+            if is_example || is_canonical
                 println("Adding file... ", joinpath(parts[2:end]...))
                 mkpath(joinpath(fpath, parts[2:end-1]...))
                 open(joinpath(fpath, parts[2:end]...), "w") do file
