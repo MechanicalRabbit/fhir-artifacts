@@ -11,7 +11,3 @@ git-tree-sha1 = "715bd0352208aff4842d67ef32c2e5e355bfd559"
   [[synthea-116.download]]
     url = "https://github.com/rbt-lang/fhir-artifacts/raw/master/synthea-116-20200705.tar.gz"
     sha256 = "14534c9271d571cd2caf5934cb9d5f5eefb1113342472a817b827ede5fb28a78"
-
-
-
-
