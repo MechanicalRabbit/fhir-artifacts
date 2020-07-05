@@ -4,3 +4,10 @@ git-tree-sha1 = "ed1dc2cc61898b165c38ecdfc8cb5f354747d2af"
   [[fhir-r4.download]]
     url = "https://github.com/rbt-lang/fhir-artifacts/raw/master/fhir-r4-2019-10-30.tar.gz"
     sha256 = "9860f332ca828a1463c3d657f6f8b4ee43855d80f8fb95d0957d91e4994bd56b"
+
+[synthea-116]
+git-tree-sha1 = "9780f1be04c9e5c27778a273f4c987b4e0375395"
+
+  [[synthea-116.download]]
+    url = "https://github.com/rbt-lang/fhir-artifacts/raw/master/synthea-116-20200705.tar.gz"
+    sha256 = "c234af8611a10fbae892dad2281e4395831b4c78bd2ddf26b23fd57bdd0ca7bb"

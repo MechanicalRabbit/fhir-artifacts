@@ -13,7 +13,7 @@ if fhir_hash == nothing || !artifact_exists(fhir_hash)
         zip = ZipFile.Reader(fname);
         for f in zip.files
             parts = split(f.name, "\\")
-            if "v3" in parts || "v2" in parts || "ehrsrle" in parts
+            if "v3" in parts || "v2" in parts
                 continue
             end
             is_canonical = endswith(parts[end], ".canonical.json")
